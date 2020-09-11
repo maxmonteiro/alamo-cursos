@@ -24,4 +24,5 @@
         @endforeach
     </tbody>
 </table>
+<a href="/" class="btn btn-primary">Voltar</a>
 @endsection

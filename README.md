@@ -29,7 +29,8 @@ php artisan key:generate
 ```
 php artisan migrate
 ```
-6. Para testar, execute o comando.
+6. Povoe o banco.
+7. Para testar, execute o comando.
 ```
 php artisan serve
 ```

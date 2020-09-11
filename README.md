@@ -15,17 +15,17 @@
 - Composer
 
 ## Instalação
-Clone o projeto e acesse o diretório pelo terminal
-Faça uma cópia do arquivo .env.example e renomeio para .env e configure as variáveis de conexão com o banco
-Execute o comando para instalar as dependências do Laravel
+1. Clone o projeto e acesse o diretório pelo terminal.
+2. Faça uma cópia do arquivo .env.example e renomeio para .env e configure as variáveis de conexão com o banco
+3. Execute o comando para instalar as dependências do Laravel
 ```
 composer install
 ```
-Execute as migrations
+4. Execute as migrations
 ```
 php artisan migrate
 ```
-Para testar, execute o comando
+5. Para testar, execute o comando
 ```
 php artisan serve
 ```

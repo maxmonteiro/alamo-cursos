@@ -1,24 +1,24 @@
 @extends('layouts.main')
 
 @section('content')
-<h1>Cursos</h1>
+<h1>{{ $course->name }} <small>- Alunos</small></h1>
 <table class="table">
     <thead>
         <tr>
             <th scope="col">Cód.</th>
             <th scope="col">Nome</th>
-            <th scope="col">Carga horária</th>
+            <th scope="col">Matrícula</th>
             <th scope="col"></th>
         </tr>
     </thead>
     <tbody>
-        @foreach ($courses as $course)
+        @foreach ($course->students as $student)
         <tr>
-            <th scope="row">{{ $course->id }}</th>
-            <td>{{ $course->name }}</td>
-            <td>{{ $course->workload }}</td>
+            <th scope="row">{{ $student->id }}</th>
+            <td>{{ $student->name }}</td>
+            <td>{{ $student->enrollment }}</td>
             <td>
-                <a href="{{ route('course.show',$course->id)}}">Acessar curso</a>
+                <a href="#">Certificado</a>
             </td>
         </tr>
         @endforeach

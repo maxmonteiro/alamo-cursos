@@ -2,24 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Course;
 use Illuminate\Http\Request;
 
 class CoursesController extends Controller
 {
     public function index()
     {
-        $courses = [
-            [
-                'id' => '1',
-                'name' => 'Téc. em Informática',
-                'workload' => 1400
-            ],
-            [
-                'id' => '2',
-                'name' => 'Téc. em Enfermagem',
-                'workload' => 1400
-            ]
-        ];
+        $courses = Course::all();
         return view('courses')->with('courses',$courses);
+    }
+
+    public function show($id) {
+        $course = Course::find($id);
+        $course->students;
+        return view('courses_students', compact('course'));       
     }
 }

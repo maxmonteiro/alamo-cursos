@@ -14,3 +14,4 @@ use App\Http\Controllers\CoursesController;
 */
 
 Route::get('/', [CoursesController::class, 'index']);
+Route::get('/course/{id}', [CoursesController::class, 'show'])->name('course.show');

@@ -15,3 +15,4 @@ use App\Http\Controllers\CoursesController;
 
 Route::get('/', [CoursesController::class, 'index']);
 Route::get('/course/{id}', [CoursesController::class, 'show'])->name('course.show');
+Route::get('/course/{courseId}/certificate/{id}', [CoursesController::class, 'generateCertificate'])->name('course.certificate');

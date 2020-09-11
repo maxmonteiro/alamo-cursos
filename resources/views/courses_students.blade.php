@@ -18,7 +18,7 @@
             <td>{{ $student->name }}</td>
             <td>{{ $student->enrollment }}</td>
             <td>
-                <a href="#">Certificado</a>
+                <a href="/course/{{ $course->id }}/certificate/{{ $student->id }}">Certificado</a>
             </td>
         </tr>
         @endforeach

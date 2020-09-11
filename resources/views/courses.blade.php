@@ -36,6 +36,7 @@
                 <a href="#">Acessar curso</a>
             </td>
         </tr>
+        
     </tbody>
 </table>
 @endsection

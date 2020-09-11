@@ -8,6 +8,18 @@ class CoursesController extends Controller
 {
     public function index()
     {
-        return view('layouts.courses');
+        $courses = [
+            [
+                'id' => '1',
+                'name' => 'Téc. em Informática',
+                'workload' => 1400
+            ],
+            [
+                'id' => '2',
+                'name' => 'Téc. em Enfermagem',
+                'workload' => 1400
+            ]
+        ];
+        return view('courses')->with('courses',$courses);
     }
 }

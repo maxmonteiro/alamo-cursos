@@ -21,11 +21,15 @@
 ```
 composer install
 ```
-4. Execute as migrations.
+4. Gere a key do projeto
+```
+php artisan key:generate
+```
+5. Execute as migrations.
 ```
 php artisan migrate
 ```
-5. Para testar, execute o comando.
+6. Para testar, execute o comando.
 ```
 php artisan serve
 ```

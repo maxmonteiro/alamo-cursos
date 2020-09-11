@@ -16,7 +16,7 @@
 
 ## Instalação
 1. Clone o projeto e acesse o diretório pelo terminal.
-2. Faça uma cópia do arquivo .env.example e renomeio para .env e configure as variáveis de conexão com o banco
+2. Faça uma cópia do arquivo .env.example e renomei-o para .env e configure as variáveis de conexão com o banco
 3. Execute o comando para instalar as dependências do Laravel
 ```
 composer install
